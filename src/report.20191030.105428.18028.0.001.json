@@ -4,10 +4,10 @@
     "reportVersion": 1,
     "event": "Allocation failed - JavaScript heap out of memory",
     "trigger": "FatalError",
-    "filename": "report.20191024.100528.13504.0.001.json",
-    "dumpEventTime": "2019-10-24T10:05:28Z",
-    "dumpEventTimeStamp": "1571922328419",
-    "processId": 13504,
+    "filename": "report.20191030.105428.18028.0.001.json",
+    "dumpEventTime": "2019-10-30T10:54:28Z",
+    "dumpEventTimeStamp": "1572443668676",
+    "processId": 18028,
     "cwd": "C:\\Users\\Rafael\\Desktop\\com231-tp3\\src",
     "commandLine": [
       "C:\\Program Files\\nodejs\\node.exe",
@@ -49,74 +49,74 @@
       {
         "model": "Intel(R) Core(TM) i7-7700HQ CPU @ 2.80GHz",
         "speed": 2808,
-        "user": 4127531,
+        "user": 33512015,
         "nice": 0,
-        "sys": 3393500,
-        "idle": 36610890,
-        "irq": 730968
+        "sys": 25628953,
+        "idle": 206665125,
+        "irq": 4621109
       },
       {
         "model": "Intel(R) Core(TM) i7-7700HQ CPU @ 2.80GHz",
         "speed": 2808,
-        "user": 2201671,
+        "user": 20690046,
         "nice": 0,
-        "sys": 989484,
-        "idle": 40940468,
-        "irq": 47921
+        "sys": 10117500,
+        "idle": 234998250,
+        "irq": 421109
       },
       {
         "model": "Intel(R) Core(TM) i7-7700HQ CPU @ 2.80GHz",
         "speed": 2808,
-        "user": 6084968,
+        "user": 38665562,
         "nice": 0,
-        "sys": 2090015,
-        "idle": 35956640,
-        "irq": 19828
+        "sys": 20341531,
+        "idle": 206798703,
+        "irq": 181796
       },
       {
         "model": "Intel(R) Core(TM) i7-7700HQ CPU @ 2.80GHz",
         "speed": 2808,
-        "user": 2057046,
+        "user": 21151578,
         "nice": 0,
-        "sys": 947781,
-        "idle": 41126796,
-        "irq": 11875
+        "sys": 9737562,
+        "idle": 234916656,
+        "irq": 121406
       },
       {
         "model": "Intel(R) Core(TM) i7-7700HQ CPU @ 2.80GHz",
         "speed": 2808,
-        "user": 3870046,
+        "user": 32006718,
         "nice": 0,
-        "sys": 2255406,
-        "idle": 38006171,
-        "irq": 25843
+        "sys": 17719843,
+        "idle": 216079234,
+        "irq": 196484
       },
       {
         "model": "Intel(R) Core(TM) i7-7700HQ CPU @ 2.80GHz",
         "speed": 2808,
-        "user": 2031843,
+        "user": 19462625,
         "nice": 0,
-        "sys": 1276156,
-        "idle": 40823625,
-        "irq": 12375
+        "sys": 9640656,
+        "idle": 236702515,
+        "irq": 108718
       },
       {
         "model": "Intel(R) Core(TM) i7-7700HQ CPU @ 2.80GHz",
         "speed": 2808,
-        "user": 3430484,
+        "user": 27968343,
         "nice": 0,
-        "sys": 1392421,
-        "idle": 39308718,
-        "irq": 22421
+        "sys": 11528187,
+        "idle": 226309265,
+        "irq": 158109
       },
       {
         "model": "Intel(R) Core(TM) i7-7700HQ CPU @ 2.80GHz",
         "speed": 2808,
-        "user": 3063000,
+        "user": 41473203,
         "nice": 0,
-        "sys": 837796,
-        "idle": 40230828,
-        "irq": 9062
+        "sys": 7888671,
+        "idle": 216443921,
+        "irq": 80187
       }
     ],
     "networkInterfaces": [
@@ -150,7 +150,7 @@
         "name": "Wi-Fi",
         "internal": false,
         "mac": "5c:ea:1d:d6:cb:51",
-        "address": "192.168.1.11",
+        "address": "192.168.1.6",
         "netmask": "255.255.255.0",
         "family": "IPv4"
       },
@@ -182,71 +182,71 @@
   },
   "nativeStack": [
     {
-      "pc": "0x00007ff7952d6ed9",
+      "pc": "0x00007ff7fbc56ed9",
       "symbol": "std::basic_ostream<char,std::char_traits<char> >::operator<<+10873"
     },
     {
-      "pc": "0x00007ff7952db26c",
+      "pc": "0x00007ff7fbc5b26c",
       "symbol": "std::basic_ostream<char,std::char_traits<char> >::operator<<+28172"
     },
     {
-      "pc": "0x00007ff7952da218",
+      "pc": "0x00007ff7fbc5a218",
       "symbol": "std::basic_ostream<char,std::char_traits<char> >::operator<<+23992"
     },
     {
-      "pc": "0x00007ff7953c5e6b",
+      "pc": "0x00007ff7fbd45e6b",
       "symbol": "v8::base::CPU::has_sse+37691"
     },
     {
-      "pc": "0x00007ff795bb89ae",
+      "pc": "0x00007ff7fc5389ae",
       "symbol": "v8::Isolate::ReportExternalAllocationLimitReached+94"
     },
     {
-      "pc": "0x00007ff795ba0951",
+      "pc": "0x00007ff7fc520951",
       "symbol": "v8::SharedArrayBuffer::Externalize+833"
     },
     {
-      "pc": "0x00007ff795a6ec8c",
+      "pc": "0x00007ff7fc3eec8c",
       "symbol": "v8::internal::Heap::EphemeronKeyWriteBarrierFromCode+1436"
     },
     {
-      "pc": "0x00007ff795a7812f",
+      "pc": "0x00007ff7fc3f812f",
       "symbol": "v8::internal::Heap::ProtectUnprotectedMemoryChunks+1279"
     },
     {
-      "pc": "0x00007ff795a76614",
+      "pc": "0x00007ff7fc3f6614",
       "symbol": "v8::internal::Heap::PageFlagsAreConsistent+3204"
     },
     {
-      "pc": "0x00007ff795a6c263",
+      "pc": "0x00007ff7fc3ec263",
       "symbol": "v8::internal::Heap::CollectGarbage+1235"
     },
     {
-      "pc": "0x00007ff795a6ab04",
+      "pc": "0x00007ff7fc3eab04",
       "symbol": "v8::internal::Heap::AddRetainedMap+2356"
     },
     {
-      "pc": "0x00007ff795a8a315",
+      "pc": "0x00007ff7fc40a315",
       "symbol": "v8::internal::Factory::NewFillerObject+53"
     },
     {
-      "pc": "0x00007ff7957f8fad",
+      "pc": "0x00007ff7fc178fad",
       "symbol": "v8::internal::interpreter::JumpTableTargetOffsets::iterator::operator=+3981"
     },
     {
-      "pc": "0x00007ff795fd224d",
+      "pc": "0x00007ff7fc95224d",
       "symbol": "v8::internal::SetupIsolateDelegate::SetupHeap+575565"
     },
     {
-      "pc": "0x000002a482878e76",
+      "pc": "0x000001b33fc2a445",
       "symbol": ""
     }
   ],
   "javascriptHeap": {
-    "totalMemory": 2160640000,
-    "totalCommittedMemory": 2160640000,
-    "usedMemory": 2134071192,
-    "availableMemory": 58286416,
+    "totalMemory": 2183913472,
+    "totalCommittedMemory": 2183913472,
+    "usedMemory": 2153532312,
+    "availableMemory": 41109672,
     "memoryLimit": 2197815296,
     "heapSpaces": {
       "read_only_space": {
@@ -257,38 +257,38 @@
         "available": 230400
       },
       "new_space": {
-        "memorySize": 15204352,
-        "committedMemory": 15204352,
-        "capacity": 7593128,
-        "used": 792144,
-        "available": 6800984
+        "memorySize": 29360128,
+        "committedMemory": 29360128,
+        "capacity": 14662592,
+        "used": 2999544,
+        "available": 11663048
       },
       "old_space": {
-        "memorySize": 2137632768,
-        "committedMemory": 2137632768,
-        "capacity": 2132719696,
-        "used": 2126233088,
-        "available": 6486608
+        "memorySize": 2150215680,
+        "committedMemory": 2150215680,
+        "capacity": 2147610072,
+        "used": 2146958264,
+        "available": 651808
       },
       "code_space": {
-        "memorySize": 688128,
-        "committedMemory": 688128,
-        "capacity": 504256,
-        "used": 504256,
+        "memorySize": 425984,
+        "committedMemory": 425984,
+        "capacity": 278944,
+        "used": 278944,
         "available": 0
       },
       "map_space": {
         "memorySize": 790528,
         "committedMemory": 790528,
-        "capacity": 541920,
-        "used": 541920,
+        "capacity": 489760,
+        "used": 489760,
         "available": 0
       },
       "large_object_space": {
-        "memorySize": 6012928,
-        "committedMemory": 6012928,
-        "capacity": 5964896,
-        "used": 5964896,
+        "memorySize": 2809856,
+        "committedMemory": 2809856,
+        "capacity": 2770912,
+        "used": 2770912,
         "available": 0
       },
       "code_large_object_space": {
@@ -301,23 +301,23 @@
       "new_large_object_space": {
         "memorySize": 0,
         "committedMemory": 0,
-        "capacity": 7593128,
+        "capacity": 14662592,
         "used": 0,
-        "available": 7593128
+        "available": 14662592
       }
     }
   },
   "resourceUsage": {
-    "userCpuSeconds": 185.359,
-    "kernelCpuSeconds": 2.968,
-    "cpuConsumptionPercent": 26.266,
-    "maxRss": 2256044032,
+    "userCpuSeconds": 60.515,
+    "kernelCpuSeconds": 1.5,
+    "cpuConsumptionPercent": 295.31,
+    "maxRss": 2256924672,
     "pageFaults": {
-      "IORequired": 970472,
+      "IORequired": 634351,
       "IONotRequired": 0
     },
     "fsActivity": {
-      "reads": 453,
+      "reads": 455,
       "writes": 6
     }
   },
@@ -353,7 +353,9 @@
     "ProgramFiles(x86)": "C:\\Program Files (x86)",
     "ProgramW6432": "C:\\Program Files",
     "PSModulePath": "C:\\Users\\Rafael\\Documents\\WindowsPowerShell\\Modules;C:\\Program Files\\WindowsPowerShell\\Modules;C:\\WINDOWS\\system32\\WindowsPowerShell\\v1.0\\Modules",
+    "PT7HOME": "E:\\Programas\\Cisco Packet Tracer 7.1.1",
     "PUBLIC": "C:\\Users\\Public",
+    "QT_DEVICE_PIXEL_RATIO": "auto",
     "SESSIONNAME": "Console",
     "SystemDrive": "C:",
     "SystemRoot": "C:\\WINDOWS",
@@ -379,8 +381,8 @@
     "C:\\WINDOWS\\System32\\WS2_32.dll",
     "C:\\WINDOWS\\System32\\RPCRT4.dll",
     "C:\\WINDOWS\\SYSTEM32\\dbghelp.dll",
-    "C:\\WINDOWS\\System32\\ADVAPI32.dll",
     "C:\\WINDOWS\\System32\\ucrtbase.dll",
+    "C:\\WINDOWS\\System32\\ADVAPI32.dll",
     "C:\\WINDOWS\\System32\\msvcrt.dll",
     "C:\\WINDOWS\\System32\\sechost.dll",
     "C:\\WINDOWS\\System32\\USER32.dll",

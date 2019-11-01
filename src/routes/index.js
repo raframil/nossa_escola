@@ -1,5 +1,6 @@
 const routes = {
-  escolas: 'http://mobile-aceite.tcu.gov.br:80/nossaEscolaRS/rest/escolas?'
+  escolas: 'http://mobile-aceite.tcu.gov.br:80/nossaEscolaRS/rest/escolas?',
+  avaliacoes: 'http://mobile-aceite.tcu.gov.br:80/nossaEscolaRS/rest/escolas'
 };
 
 module.exports = { routes };

@@ -47,11 +47,7 @@ const saveEscolas = escolas => {
       if (err) {
         reject(console.error(chalk.red(err)));
       } else {
-        resolve(
-          console.log(
-            chalk.green(`\n${escolas.lenght} escolas inseridas na coleção\n`)
-          )
-        );
+        resolve(console.log(chalk.green(`\n${escolas.length} escolas inseridas na coleção\n`)));
       }
     });
   });
@@ -66,21 +62,35 @@ const saveEscolas = escolas => {
  */
 const getAllEscolas = async (pagina, quantidadeDeItens, resultsArray = []) => {
   const results = await getEscolas(pagina, quantidadeDeItens);
-  console.log(`Recuperando dados da API na página : ` + chalk.blue(pagina));
+  console.log(`Recuperando escolas na página : ` + chalk.blue(pagina));
   if (pagina != 0 && pagina % 10 === 0) {
     await saveEscolas(resultsArray);
     resultsArray = [];
   }
   if (results.length > 0) {
-    for (let i = 0; i < quantidadeDeItens; i++) {
+    for (let i = 0; i < results.length; i++) {
       resultsArray.push(results[i]);
     }
-    return results.concat(
-      await getAllEscolas(pagina + 1, quantidadeDeItens, resultsArray)
-    );
+    return results.concat(await getAllEscolas(pagina + 1, quantidadeDeItens, resultsArray));
   } else {
     return resultsArray;
   }
 };
 
-module.exports = { getEscolas, getAllEscolas, saveEscolas };
+/**
+ * @param numEscolas numero de documentos retornados do MongoDB
+ * @returns promise - array de objetos com id e codEscola
+ */
+const queryEscolas = numEscolas => {
+  return new Promise((resolve, reject) => {
+    Escola.find({}, { _id: true, codEscola: true }, { limit: numEscolas }, function(err, response) {
+      if (!err) {
+        resolve(response);
+      } else {
+        reject(err);
+      }
+    });
+  });
+};
+
+module.exports = { getEscolas, getAllEscolas, saveEscolas, queryEscolas };
